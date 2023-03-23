@@ -149,7 +149,7 @@ public class Controller implements Initializable {
     void executeScript(Connection connection, String script) {
         try {
             Statement statement = connection.createStatement();
-            statement.executeQuery(script);
+            statement.executeUpdate(script);
             statement.close();
         } catch (SQLException exception) {
             exception.printStackTrace();
