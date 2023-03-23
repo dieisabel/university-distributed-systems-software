@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.kadyrov.lab1.Controller">
+   <children>
+      <Button fx:id="sendButton" layoutX="363.0" layoutY="315.0" mnemonicParsing="false" onAction="#sendScript" prefHeight="50.0" prefWidth="100.0" text="Send" />
+      <TableView fx:id="beforeScriptTable" prefHeight="500.0" prefWidth="235.0">
+        <columns>
+          <TableColumn fx:id="beforeScriptTableNameColumn" prefWidth="118.0" text="name" />
+          <TableColumn fx:id="beforeScriptTableFamilyColumn" prefWidth="116.0" text="family" />
+        </columns>
+      </TableView>
+      <TableView fx:id="afterScriptTable" layoutX="590.0" prefHeight="500.0" prefWidth="235.0">
+        <columns>
+          <TableColumn fx:id="afterScriptTableNameColumn" prefWidth="117.0" text="name" />
+          <TableColumn fx:id="afterScriptTableFamilyColumn" prefWidth="117.0" text="family" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="connectionTypeChoice" layoutX="338.0" layoutY="78.0" prefWidth="150.0" />
+      <Label layoutX="359.0" layoutY="46.0" text="Connection type" />
+      <TextArea fx:id="scriptTextArea" layoutX="323.0" layoutY="172.0" prefHeight="102.0" prefWidth="182.0" />
+      <Label layoutX="395.0" layoutY="138.0" text="Script" />
+      <Label fx:id="errorLabel" layoutX="343.0" layoutY="408.0" text="Error" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
